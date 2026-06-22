@@ -1,0 +1,220 @@
+.home-page {
+  background: var(--background);
+}
+
+/* ========================
+   HERO SECTION
+======================== */
+
+.hero-section {
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)
+  );
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 650px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ========================
+   SECTION TITLE
+======================== */
+
+.section-title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+/* ========================
+   WHY CHOOSE US
+======================== */
+
+.why-section {
+  background: var(--surface);
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+  transition: var(--transition-normal);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ========================
+   SERVICES
+======================== */
+
+.services-section {
+  padding: 80px 0;
+}
+
+.service-preview-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  height: 100%;
+}
+
+.service-preview-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-preview-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 24px;
+}
+
+.service-content h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ========================
+   STATS
+======================== */
+
+.stats-section {
+  background: var(--primary);
+  color: white;
+  padding: 80px 0;
+}
+
+.stat-box h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+}
+
+.stat-box p {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  opacity: 0.85;
+}
+
+/* ========================
+   FINAL CTA
+======================== */
+
+.final-cta {
+  background: var(--surface);
+  padding: 100px 20px;
+}
+
+.final-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.final-cta p {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 550px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+}
